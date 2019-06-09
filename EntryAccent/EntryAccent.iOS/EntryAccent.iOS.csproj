@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Developer: Guriy Samarin (9HT2GP82T9)</CodesignKey>
+    <CodesignKey>empty</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>
     </CodesignEntitlements>

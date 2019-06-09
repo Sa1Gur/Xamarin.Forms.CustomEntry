@@ -10,8 +10,6 @@ namespace EntryAccent
         public static readonly BindableProperty MyHandleColorProperty = BindableProperty.Create(nameof(MyHandleColor), typeof(Color), typeof(MyEntry));
 
         public static readonly BindableProperty MyTintColorProperty = BindableProperty.Create(nameof(MyTintColor), typeof(Color), typeof(MyEntry));
-
-        public static readonly BindableProperty SmallLabelStyleProperty = BindableProperty.Create(nameof(SmallLabelStyle), typeof(Style), typeof(MyEntry));
         #endregion
 
         #region Properties
@@ -29,16 +27,7 @@ namespace EntryAccent
         {
             get => (Color)GetValue(MyTintColorProperty);
             set => SetValue(MyTintColorProperty, value);
-        }
-        public Style SmallLabelStyle
-        {
-            get => (Style)GetValue(SmallLabelStyleProperty);
-            set => SetValue(SmallLabelStyleProperty, value);
-        }
+        }        
         #endregion
-
-        //#region Methods
-        //public T GetValue<T>(BindableProperty property) => (T)GetValue(property);
-        //#endregion
     }
 }
