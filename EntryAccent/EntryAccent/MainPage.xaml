@@ -12,8 +12,8 @@
         </StackLayout>
         <StackLayout>
             <Label Text="Customized" />
-            <local:MyEntry Text="Text" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" MyHighlightColor="Blue" MyHandleColor="Red" MyTintColor="Black" />
-            <local:MyEntry Placeholder="Placeholder" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" MyHighlightColor="Blue" MyHandleColor="Red" MyTintColor="Black" />
+            <local:MyEntry Text="Text" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" MyHighlightColor="Blue" MyHandleColor="Violet" MyTintColor="Black" />
+            <local:MyEntry Placeholder="Placeholder" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" MyHighlightColor="Blue" MyHandleColor="Violet" MyTintColor="Black" />
         </StackLayout>
     </StackLayout>
 
