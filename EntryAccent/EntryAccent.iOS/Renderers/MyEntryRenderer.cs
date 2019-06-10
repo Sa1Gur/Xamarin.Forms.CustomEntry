@@ -14,14 +14,14 @@ namespace EntryAccent.iOS.Renderers
 
             TintCustomization(Control, e.NewElement as MyEntry);
         }
-        protected override void OnElementPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
-            base.OnElementPropertyChanged(sender, e);
+        //protected override void OnElementPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        //{
+        //    base.OnElementPropertyChanged(sender, e);
 
-            if (Control == null) return;
+        //    if (Control == null) return;
 
-            TintCustomization(Control, sender as MyEntry);
-        }
+        //    TintCustomization(Control, sender as MyEntry);
+        //}
 
         private void TintCustomization(UITextField Control, MyEntry customEntry)
         {
