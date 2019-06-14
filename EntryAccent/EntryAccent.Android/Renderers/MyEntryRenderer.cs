@@ -6,8 +6,10 @@ using Android.OS;
 using Android.Runtime;
 using Android.Support.V4.Content;
 using Android.Widget;
+
 using EntryAccent;
 using EntryAccent.Droid.Renderers;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
@@ -44,9 +46,9 @@ namespace EntryAccent.Droid.Renderers
                 {
                     field                   = textViewTemplate.Class.GetDeclaredField(fieldsNames[index]);
                     field.Accessible        = true;
-                    Drawable handleDrawable = ContextCompat.GetDrawable(Context, field.GetInt(Control));
+                    Drawable handleDrawable = ContextCompat.GetDrawable(Context, field.GetInt(Control));                    
 
-                    handleDrawable.SetColorFilter(customEntry.MyHandleColor.ToAndroid(), PorterDuff.Mode.SrcIn);
+                    handleDrawable.SetColorFilter(new PorterDuffColorFilter(customEntry.MyHandleColor.ToAndroid(), PorterDuff.Mode.SrcIn));
 
                     field            = editor.Class.GetDeclaredField(drawablesNames[index]);
                     field.Accessible = true;
@@ -59,7 +61,7 @@ namespace EntryAccent.Droid.Renderers
                 }
                 else
                 {
-                    Control.Background.SetColorFilter(customEntry.MyTintColor.ToAndroid(), PorterDuff.Mode.SrcAtop);
+                    Control.Background.SetColorFilter(new PorterDuffColorFilter(customEntry.MyTintColor.ToAndroid(), PorterDuff.Mode.SrcAtop));
                 }
             }
         }
